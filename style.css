@@ -69,10 +69,15 @@ header h1 {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
   background-color: #444;
+}
+
+.btn-clicked {
+  background-color: #555 !important;
 }
 
 .btn-link {
@@ -122,6 +127,13 @@ header h1 {
   margin: 0 5px 20px;
   font-weight: 700;
   cursor: pointer;
+  background: linear-gradient(135deg, #F5F5F5 0%, #fff6e1 100%);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.items li:hover {
+  background: linear-gradient(135deg, #fbc2eb 0%, #a18cd1 100%);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 500px) {
